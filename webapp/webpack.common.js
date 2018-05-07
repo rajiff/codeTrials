@@ -9,8 +9,8 @@ module.exports = {
     rules: [{
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
-        //loader: ["babel-loader", "eslint-loader"]
-        loader: "babel-loader",
+        loader: ["babel-loader", "eslint-loader"]
+        // loader: "babel-loader",
         query: {
           presets: ['env', "es2015", "react", "stage-2"]
         },
