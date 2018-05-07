@@ -34,11 +34,11 @@ export default class ApplicationBar extends React.Component {
 						<MenuIcon />
 					</IconButton>
 					<Typography variant="title" color="inherit" style={{flex: 1}}>
-						{"MERN App"}
+						{"Code Trials"}
 					</Typography>
 					<Drawer open={this.state.openDraw} onClose={this.toggleDrawer}>
 						<ListItem>
-							<ListItemText primary={"MERN App"} secondary={"ReactJS v16"} />
+							<ListItemText primary={"Code Trials"} secondary={"v0.1.0"} />
 						</ListItem>
 						<Divider/>
 						<Router>
