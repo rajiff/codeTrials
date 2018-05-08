@@ -42,6 +42,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
+  	onTechDomainListLoad: () => {
+  		dispatch(ActionGenerators.onTechDomainListLoad());
+  	},
     onAddTechDomain: (newTechDomain) => {
       dispatch(ActionGenerators.onAddNewTechDomain(newTechDomain));
     }
