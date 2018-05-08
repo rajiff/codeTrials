@@ -1,6 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const path = require('path');
 
 module.exports = {
@@ -9,8 +7,7 @@ module.exports = {
     rules: [{
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
-        loader: ["babel-loader", "eslint-loader"]
-        // loader: "babel-loader",
+        loader: "babel-loader",
         query: {
           presets: ['env', "es2015", "react", "stage-2"]
         },
