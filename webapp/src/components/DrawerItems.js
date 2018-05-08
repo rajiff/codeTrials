@@ -17,9 +17,9 @@ export default class DrawerItems extends React.Component {
 			icon: <DashboardIcon />,
 			link: '/welcome'
 		}, {
-			name: 'Add an Resource',
+			name: 'New Tech Domain',
 			icon: <NoteAddIcon />,
-			link: '/resources/new'
+			link: '/techdomains/new'
 		}, {
 			name: 'View an Resource',
 			icon: <DescriptionIcon />,
